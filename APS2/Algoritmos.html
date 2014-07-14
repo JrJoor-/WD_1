@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<title>Vetor em Algoritmos</title>
+	</head>
+	<body id="inicio">
+		<div class="Algoritmos">
+		<header>
+			<nav id="logo"><img src="img/logo_site.png" alt="logo"></nav>
+			<nav id="menu">
+				<ul>
+					<li ><a class="menu_nao_selecionado" href="sobre.html">Sobre</a></li>
+					<li ><a class="menu_nao_selecionado" href="Java.html">Java</a></li>
+					<li ><a class="menu_nao_selecionado" href="C-C++.html">C/C++</a></li>
+					<li ><a class="menu_nao_selecionado"  href="Pascal.html">Pascal</a></li>
+					<li ><a class="menu_selecionado" href="Algoritmos.html">Algoritmos</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		<article class="Algoritmos">
+			<section>
+				<h1>Vetor em algoritmos</h1>
+
+				<h3>Definição de vetor</h3>
+				<p>Vetor também é conhecido como variável composta homogênea unidimensional. Isto quer dizer que se trata de um conjunto de variáveis de mesmo tipo, que possuem o mesmo identificador(nome) e são alocadas sequencialmente na memória. Como as variáveis tem o mesmo nome, o que distingue é um índice que referencia sua localização dentro da estrutura.
+				</p>
+				<h3>Declaração de vetor:</h3>
+				<p class="exemplo">DECLARE nome[tamanho] tipo </p>
+				<p>
+				Onde: <span class="exemplo">nome</span> é o nome da variável do tipo vetor; <span class="exemplo">tamanho</span> é a quantidade de variáveis que vão compor o vetor; <span class="exemplo">tipo</span> é o tipo básico dos dados que serão armazenados no vetor.
+				</p>
+				<h3>Exemplo de vetor</h3>
+
+				<p>DECLARE X[5] NUMÉRICO:</p>
+
+				<table>
+					<tr id="vetor_pascal">
+						<td style = border-style:none;>X</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr class="tabela_vazia">
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+					</tr>
+				</table> 
+
+				<h3>Atribuindo Valores ao vetor</h3> 
+				<p>As atribuições em vetor exigem que seja informada em qual de suas posições o valor ficará armazenado.</p>
+				<p><span class="exemplo">X[1] &lt;-- 45</span></p>
+				<p>No exemplo, o numero 45 será armazenado na posição de índice 1 do vetor.</p>
+				<p><span class="exemplo">X[4] &lt;-- 0</span></p>
+				<p>No exemplo, o numero 0 será armazendo na posição do indice 4 do vetor.</p>
+
+				<h3>Preenchendo um vetor</h3> 
+				<p>Preencher um vetor significa atribuir valores a todas as suas posições. Assim, deve-se implementar um mecanismo que controle o valor do índice.</p>
+
+				<p class="exemplo">PARA i &lt;-- 1 ATÉ 5 FAÇA<br><br>
+				INÍCIO</p>
+				<pre class="exemplo">	ESCREVA "digite o", i, "º número"</pre>
+				<pre class="exemplo">	LEIA X [i]</pre>
+				<p class="exemplo">FIM</p>
+				<P>Neste exemplo, a estrutura de repetição <span class="exemplo">PARA</span> foi utilizada para garantir que a variável <span class="exemplo">i</span> assuma todos os valores possíveis para o indice do vetor. Assim, para cada execução da repetição será utilizada uma posição diferente do vetor. </p>
+
+				<h3>SIMULAÇÃO:</h3> 
+				<table id="simulacao_algoritmo">
+					<tr id="cabecalho_tabela">
+						<td colspan="7" >MEMÓRIA</td>
+						<td>TELA</td>
+					</tr>
+					<tr>
+						<td rowspan="2"> i = 1 </td>
+						<td> X </td>
+						<td> 95 </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> Digite o primeiro numero </td>
+					</tr>
+					<tr>
+						<td>  </td>
+						<td> 1 </td>
+						<td> 2 </td>
+						<td> 3 </td>
+						<td> 4 </td>
+						<td> 5 </td>
+						<td> 95</td>
+					</tr>
+					<tr class="linha_escura">
+						<td rowspan="2">i = 2</td>
+						<td> X </td>
+						<td> 95 </td>
+						<td> 13 </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> Digite o segundo número </td>
+					</tr>
+					<tr class="linha_escura">
+						<td> </td>
+						<td> 1 </td>
+						<td> 2 </td>
+						<td> 3 </td>
+						<td> 4 </td>
+						<td> 5 </td>
+						<td> 13 </td>
+					</tr>
+					<tr>
+						<td rowspan="2">i = 3</td>
+						<td> X </td>
+						<td> 95 </td>
+						<td> 13 </td>
+						<td> -25 </td>
+						<td> </td>
+						<td> </td>
+						<td> Digite o terceiro número </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> 1 </td>
+						<td> 2 </td>
+						<td> 3 </td>
+						<td> 4 </td>
+						<td> 5 </td>
+						<td> -25 </td>
+					</tr>
+					<tr class="linha_escura">
+						<td rowspan="2">i = 4</td>
+						<td> X </td>
+						<td> 95 </td>
+						<td> 13 </td>
+						<td> -25 </td>
+						<td> 47 </td>
+						<td> </td>
+						<td> Digite o quarto número </td>
+					</tr>
+					<tr class="linha_escura">
+						<td> </td>
+						<td> 1 </td>
+						<td> 2 </td>
+						<td> 3 </td>
+						<td> 4 </td>
+						<td> 5 </td>
+						<td> 47 </td>
+					</tr>
+					<tr>
+						<td rowspan="2">i = 5</td>
+						<td> X </td>
+						<td> 95 </td>
+						<td> 13 </td>
+						<td> -25 </td>
+						<td> 47 </td>
+						<td> 0 </td>
+						<td> Digite o quinto número </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> 1 </td>
+						<td> 2 </td>
+						<td> 3 </td>
+						<td> 4 </td>
+						<td> 5 </td>
+						<td> 0 </td>
+					</tr>				
+				</table> 
+
+				<h3>MOSTRANDO OS ELEMENTO DO VETOR</h3>
+				<p>Mostrar os valores em um vetor também implica a utilização do índice.</p>
+
+				<p class="exemplo">PARA i &lt;-- 1 ATÉ 5 FAÇA<br><br>
+				INÍCIO</p>
+				<pre class="exemplo">	ESCREVA "este é o ", i, "º número do vetor"</pre>
+				<pre class="exemplo">	ESCREVA X [i]</pre>
+				<p class="exemplo">FIM</p>
+
+				<p>Neste exemplo, a estrutura de repetição <span class="exemplo">PARA </span>foi utilizada para garantir que a variável <span class="exemplo">i</span> assuma todos os valores possíveis para o indice do vetor. Assim, para cada execução da repetição, será utilizada uma posição diferente e dessa forma, todos os valores do vetor serão mostrados. </p>
+
+				<nav id="ancora">
+					<a href="#inicio">inicio</a>
+				</nav>
+
+			</section>
+		</article>
+		<footer>
+			<address><br>Desenvolvido por <a id="email" href="mailto:joao-junior@utfpr.com.br">João Amaral Junior</a> |	2º Período - UTFPR - 2014.</address>
+		</footer>
+		</div>
+	</body>
+</html>

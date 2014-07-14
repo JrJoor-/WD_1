@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<title>Vetor em Java</title>
+	</head>
+	<body id="inicio">
+		<div class="Java">
+		<header>
+			<nav id="logo"><img src="img/logo_site.png" alt="logo"></nav>
+			<nav id="menu">
+				<ul>
+					<li ><a class="menu_nao_selecionado" href="sobre.html">Sobre</a></li>
+					<li ><a class="menu_selecionado" href="Java.html">Java</a></li>
+					<li ><a class="menu_nao_selecionado" href="C-C++.html">C/C++</a></li>
+					<li ><a class="menu_nao_selecionado" href="Pascal.html">Pascal</a></li>
+					<li ><a class="menu_nao_selecionado" href="Algoritmos.html">Algoritmos</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		<article class="Java">
+			<section>
+				<h1>Vetor em Java</h1>
+				<h3>Definição de vetor</h3>
+				<p>As Variáveis compostas homogêneas unidimensionais (vetores) são variáveis capazes de armazenar vários valores.
+				Cada um desses valores é identificado pelo mesmo nome (o nome dado ao vetor). Eles são diferenciados apenas por um índice.
+				Os índices utilizados na linguagem JAVA para identificar as posições de um vetor começam no 0 (zero) e vão até o tamanho de um vetor menos uma unidade.</p>
+
+				<h3>Declaração de vetor</h3>
+				<p>Os vetores em JAVA  são definidos pela existência de colchetes vazios entes ou depois do nome da variável no momento da declaração. Logo depois, deve ser feito o dimensionamento do vetor.</p>
+
+				<h3>Exemplo de Vetor</h3>
+				<p>Nos exemplos a seguir são utilizados duas linhas de comando: a primeira declara um vetor e a segunda define o seu tamanho.</p>
+				<p><strong>Exemplo 1:</strong></p> 
+				<p>Na primeira linhas deste exemplo, os colchetes vazios após o nome definem que <span class="exemplo">x </span>será um vetor. O tipo <span class="exemplo">int</span> determina que todas as suas posições armazenarão valores inteiros. A segunda linha determina que o vetor <span class="exemplo">x</span> terá tamanho 10 (ou seja, das posições 0 a 9).</p>
+				
+				<p class="exemplo"><br>
+				Int x [];<br>
+				x= new int [10];</p>
+
+				<table>
+					<tr class="vetor_pascal2">
+						<td style = border-style:none;>X</td>
+						<td>10</td>
+						<td>5</td>
+						<td>3</td>
+						<td>8</td>
+						<td>1</td>
+						<td>19</td>
+						<td>44</td>
+						<td>21</td>
+						<td>2</td>
+						<td>7</td>
+					</tr>
+					<tr class="tabela_vazia2">
+						<td></td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+					</tr>
+				</table> 
+
+				<p><strong>Exemplo 2:</strong></p>
+				<p>Na primeira linha deste exemplo, os colchetes vazios antes do nome definem que <span class="exemplo">y</span> será um vetor. O tipo <span class="exemplo">float</span> determina o tipo do número que poderá ser armazenado em todas as suas posições. A segunda linda determina que o vetor <span class="exemplo">y</span> terá tamanho 6 (ou seja, das posições 0 a 5).</p>
+
+				<p class="exemplo"><br>
+				float []y; <br>
+				y = new float [6];</p>
+
+				<table>
+					<tr class="vetor_pascal2">
+						<td style = border-style:none;>y</td>
+						<td>1.5</td>
+						<td>8.9</td>
+						<td>3.0</td>
+						<td>4.7</td>
+						<td>15.3</td>
+						<td>16.0</td>
+					</tr>
+					<tr class="tabela_vazia2">
+						<td></td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+					</tr>
+				</table> 
+
+				<p>Já nos exemplos apresentados a seguir, utilizou-se a forma condensada, onde a declaração e o dimensionamento de um vetor
+				são feitos utilizando-se uma unica linha.</p>
+
+				<p><strong>Exemplo 3:</strong></p>
+				<p>Este exemplo define e dimensiona o vetor <span class="exemplo">x</span> utilizando uma única linha. Assim, a parte que antecede o sinal de igual informa	que <span class="exemplo">x</span> é um vetor e que poderá armazenar números inteiros. A parte que sucede o sinal de igual dimensiona o tamanho de <span class="exemplo">x</span> em 8 (das posições 0 a 7).
+
+				<p class="exemplo">int X[] = new int[8];</p>
+
+				<table>
+					<tr class="vetor_pascal2">
+						<td style = border-style:none;>X</td>
+						<td>5</td>
+						<td>9</td>
+						<td>1</td>
+						<td>14</td>
+						<td>25</td>
+						<td>3</td>
+						<td>18</td>
+						<td>0</td>
+					</tr>
+					<tr class="tabela_vazia2">
+						<td></td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+				</table> 
+
+				<p><strong>Exemplo 4: </strong></p>
+				<p>Este exemplo define e dimensiona o vetor <span class="exemplo">y</span> utilizando uma única linha. Assim, a parte que antecede o sinal de igual informa que <span class="exemplo">y</span> é um vetor e que poderá armazenar qualquer caractere. A parte que sucede o sinal de igual dimensiona o tamanho de <span class="exemplo">y</span> em 5 (das posições 0 a 4).</p>
+
+				<p class="exemplo">char []y = new char[5];</p>
+
+				<table>
+					<tr class="vetor_pascal2">
+						<td style = border-style:none;>y</td>
+						<td>A</td>
+						<td>*</td>
+						<td>2</td>
+						<td>@</td>
+						<td>k</td>
+					</tr>
+					<tr class="tabela_vazia2">
+						<td></td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+				</table> 
+
+				<h3>Atribuindo valores ao vetor</h3>
+
+				<p>As atribuições em vetor exigem que seja informada em qual das suas posições o valor ficará armazenado. Deve-se lembrar sempre que a primeira posição de um vetor em JAVA tem índice 0.</p>
+
+				<p><span class="exemplo">vet[0] = 1; </span>atribui o valor 1 à primeira posição do vetor (lembre-se que o vetor começa na posição 0)</p>
+				<p><span class="exemplo">x[3] = 'b'</span> atrivbui a letra b à quarta posição do vetor (lembre-se que o vetor começa na posição 0)</p>
+
+				<h3>Preenchendo um vetor</h3>
+
+				<p>Preencher um vetor significa atribuir valores a todas as suas posições. Assim, deve-se implementar um mecanismo que controle o valor do índice.</p>
+
+				<pre class="exemplo">e = new Scanner(System.in)</pre>
+				<pre class="exemplo">for (i=0; i&lt;10; i++)</pre>
+				<pre class="exemplo">	vet[i] = e.nextInt();</pre>
+
+				<p>Nesse exemplo, a estrutura de repetição <span class="exemplo">FOR</span> foi utilizada para garantir que a variável <span class="exemplo">i</span> assuma todos os valores possíveis para o índice do vetor (de 0 a 9). Assim, para cada execução da repetição, uma posição diferente do vetor será utilizada. </p>
+
+
+				<h3>Mostrando os elementos do vetor</h3>
+				<p>Mostrar os valores contidos em um vetor também implica a utilização do índice.</p>
+
+				<pre class="exemplo">for (i=0; i&lt;10; i++)</pre>
+				<pre class="exemplo">	System.out.printLn(vet[i]);</pre>
+
+				<p>Nesse exemplo, a estrutura de repetição <span class="exemplo">FOR</span> foi utilizada para garantir que a variável <span class="exemplo">i</span> assuma todos os valores possíveis para o índice (de 0 a 9). Assim, para cada execução da repetição, será utilizada uma posição diferente e, dessa forma, todos os valores do vetor serão mostrados.</p>
+
+				<nav id="ancora">
+					<a href="#inicio">inicio</a>
+				</nav>
+
+			</section>
+		</article>
+		<footer>
+			<address>Desenvolvido por <a id="email" href="mailto:joao-junior@utfpr.com.br">João Amaral Junior</a> |	2º Período - UTFPR - 2014.</address>
+		</footer>
+		</div>
+	</body>
+</html>

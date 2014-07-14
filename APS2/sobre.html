@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<title>Sobre</title>
+	</head>
+	<body id="inicio">
+		<nav class="Sobre">
+		<header>
+			<nav id="logo"><img src="img/logo_site.png" alt="logo"></nav>
+			<nav id="menu">
+				<ul>
+					<li ><a class="menu_selecionado" href="sobre.html">Sobre</a></li>
+					<li ><a class="menu_nao_selecionado" href="Java.html">Java</a></li>
+					<li ><a class="menu_nao_selecionado" href="C-C++.html">C/C++</a></li>
+					<li ><a class="menu_nao_selecionado"  href="Pascal.html">Pascal</a></li>
+					<li ><a class="menu_nao_selecionado" href="Algoritmos.html">Algoritmos</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article class="Sobre">
+			<section>
+				<h1>Sobre</h1>
+				
+				<p>Site desenvolvido para obter nota parcial na disciplina <cite>Programação para a Internet I</cite>, ministrada pelo Prof. Me. Guilherme da Costa Silva.</p>
+				<p>O conteúdo é o capítulo 6 (Vetores p.145 - 151) do livro <cite>Fundamentos de programação para computadores, 2ª Edição, São Paulo: Pearson Prentice Hall, 2007 </cite>- Ana Fernanda Gomes Ascencio | Edilene Aparecida Veneruchi de Campos.</p> 
+				<blockquote>Universidade Técnologica Federal do Paraná<br>
+				Técnologia em Sistemas para Internet<br>
+				Junho de 2014 </blockquote>
+
+				<hr>
+				
+				<h3>Deixe nos sua opinião sobre o desenvolvimento deste site</h3>
+				<form name="Opinião">
+					<p class="nome">
+						<input type="text" placeholder=" Pedro da Silva" required="required" />
+						<label>Nome</label>
+					</p>
+					<p>
+						<input type="text" placeholder=" (xx) 9999-1111" />
+						<label>Telefone</label>
+					</p>
+					<p>
+						<input type="email" placeholder=" seunome@provedor.com" />
+						<label>E-mail</label>
+					</p>
+					<p>
+						<textarea placeholder="Deixe sua opinião"></textarea>
+					</p>
+					<p>
+						<input id="bt_enviar" type="submit" onclick="Enviar();" value="Enviar" />
+					</p>		
+				</form>
+			</section>
+		</article>
+		<footer>
+			<address>Desenvolvido por <a id="email" href="mailto:joao-junior@utfpr.com.br">João Amaral Junior</a> |	2º Período - UTFPR - 2014.</address>
+		</footer>
+		</nav>
+	</body>
+</html>

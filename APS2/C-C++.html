@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<title>Vetor em C/C++</title>
+	</head>
+	<body id="inicio">
+		<div class="C-C">
+		<header>
+			<nav id="logo"><img src="img/logo_site.png" alt="logo"></nav>
+			<nav id="menu">
+				<ul>
+					<li ><a class="menu_nao_selecionado" href="sobre.html">Sobre</a></li>
+					<li ><a class="menu_nao_selecionado" href="Java.html">Java</a></li>
+					<li ><a class="menu_selecionado" href="C-C++.html">C/C++</a></li>
+					<li ><a class="menu_nao_selecionado" href="Pascal.html">Pascal</a></li>
+					<li ><a class="menu_nao_selecionado" href="Algoritmos.html">Algoritmos</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		<article class="C-C">
+			<section>
+				<h1>Vetor em C/C++</h1>
+				<h3>Definição de Vetor</h3>
+				<p>As Variáveis compostas homogêneas unidimensionais (vetores) são variáveis capazes de armazenar vários valores. 
+				Cada um desses valores é identificado pelo mesmo nome (o nome dado ao vetor). Eles são diferenciados apenas por um índice.</p>
+				<p>Os índices utilizados na linguagem C/C++ para identificar as posições de um vetor começam sempre em 0 (zero) e vão até o tamanho de um vetor menos uma unidade.</p>
+
+				<h3>Declaração em vetor</h3>
+				<p>Os valores em c/c++ são identificados pela existências de colchetes logo após o nome da variável no momentos da declaração. Dentro dos colchetes deve-se colocar o número de posições do vetor.</p>
+
+				<h3>Exemplo de vetor</h3> 
+				<p class="exemplo">int vet [10];</p>
+
+				<table>
+					<tr class="vetor_pascal2">
+						<td style = border-style:none;>X</td>
+						<td>10</td>
+						<td>5</td>
+						<td>3</td>
+						<td>8</td>
+						<td>1</td>
+						<td>19</td>
+						<td>44</td>
+						<td>21</td>
+						<td>2</td>
+						<td>7</td>
+					</tr>
+					<tr class="tabela_vazia2">
+						<td></td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+					</tr>
+				</table> 
+
+
+				<p>Nesse exemplo, o vetor chamado <span class="exemplo">vet</span> possui dez posições, começando pela posição 0 e indo até a posição 9( tamanho do vetor -1). Em cada posição poderão ser armazenados números inteiros, conforme especificado pelo tipo <span class="exemplo">int </span>na declaração.</p>
+				<p class="exemplo"> char x[5];</p>
+				<table>
+					<tr class="vetor_pascal2">
+						<td style = border-style:none;>X</td>
+						<td>A</td>
+						<td>*</td>
+						<td>2</td>
+						<td>@</td>
+						<td>k</td>
+					</tr>
+					<tr class="tabela_vazia2">
+						<td></td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+				</table> 
+				<p>Nesse exemplo, o vetor chamado <span class="exemplo">x</span> possui cinco posições, começando pela posição 0 e indo até a posição 4 (tamanho do vetor -1). Em cada posição poderão ser armazenados caracteres, conforme especificado pelo tipo <span class="exemplo">char</span> na declaração.</p>
+				<p>É importante ressaltar que, na linguagem C/C++, não existe o tipo de dado <span class="exemplo">string</span>, como ocorre na linguagem Pascal.	Dessa maneira, para poder armazenar em uma cadeia de caracteres, por exemplo, o nome completo de uma pessoa, deve-se declarar um vetor de <span class="exemplo">char</span>, em que cada posição equivale a um caractere ou a uma letra do nome. É importante lembrar, entretanto, que toda vez que se faz uso de um vetor para armazenar uma cadeia de caracteres, deve-se dfinir uma posição a mais que a necessária para armazenar a marca de finalização de cadeia (\0).</p>
+
+				<h3>Atribuindo valores ao vetor</h3>
+				<p>As atribuições em vetor exigem que seja informada em qual de suas posições o  valor ficará armazenado. Deve-se lembrar sempre que a primeira posição de um vetor em C/C++ tem índice 0.</p>
+
+				<p><span class="exemplo">vet[0]=1;</span> atribui o valor 1 à primeira posição do vetor(lembre-se que o vetor começa na posição 0)</p>
+				<p><span class="exemplo">x[3]='b';</span> atribui a letra b à quarta posição do vetor (lembre-se que o vetor começa na posição 0)</p>
+
+				<h3>Preenchendo um vetor</h3>
+				<p>Preencher um vetor significa atribuir valores as suas posiçoes, assim deve-se implementar um mecanismo que controle o valor do índice.</p> 
+				<p class="exemplo"><br>
+				for (i=0; i&lt;10; i++)<br>
+				&nbsp;&nbsp;cin>> vetor[i];</p>
+
+				<p>Nesse exemplo, a estrutura de repetição <span class="exemplo">FOR </span>foi utilizada para garantir que a variável <span class="exemplo">i</span> assuma todos os valores possíveis para o índice do vetor (de 0 a 9). Assim, para cada execução da repetição, será utilizada uma posição diferente do vetor. </p>
+
+				<h3>Mostrando os elementos do vetor</h3>
+				<p>Mostrar os valores contidos em um vetor também exige a utilização do índice.</p>
+				<p class="exemplo"><br>
+				for (i=0; 1&lt;10; i++)<br>
+				cout &lt;&lt; vetor [i];<br>
+				<p>Nesse exemplo, a estrutura de repetição <span class="exemplo">FOR</span> foi utilizada para garantir que a variável <span class="exemplo">i</span> assuma todos os valores possiveis para o índice do vetor (de 0 a 9).  Assim para cada execução da repetição, será utilizada uma posição diferente e, dessa forma, todos os valores do vetor serão mostrados. 
+
+				<nav id="ancora">
+					<a href="#inicio">inicio</a>
+				</nav>
+
+			</section>
+		</article>
+		<footer>
+			<address>Desenvolvido por <a id="email" href="mailto:joao-junior@utfpr.com.br">João Amaral Junior</a> |	2º Período - UTFPR - 2014.</address>
+		</footer>
+		</div>
+	</body>
+</html>

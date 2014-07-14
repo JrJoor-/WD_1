@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<title>Vetor em Pascal</title>
+	</head>
+	<body id="inicio">
+		<div class="Pascal">
+		<header>
+			<nav id="logo"><img src="img/logo_site.png" alt="logo"></nav>
+			<nav id="menu">
+				<ul>
+					<li ><a class="menu_nao_selecionado" href="sobre.html">Sobre</a></li>
+					<li ><a class="menu_nao_selecionado" href="Java.html">Java</a></li>
+					<li ><a class="menu_nao_selecionado" href="C-C++.html">C/C++</a></li>
+					<li ><a class="menu_selecionado" href="Pascal.html">Pascal</a></li>
+					<li ><a class="menu_nao_selecionado" href="Algoritmos.html">Algoritmos</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article class="Pascal">
+			<section>
+				<h1>Vetor em Pascal</h1>
+
+				<h3>DEFINIÇÃO DE VETOR</h3> 
+				<p>As variáveis compostas homogêneas unidimensionais (vetores) são conhecidas na linguagem Pascal como ARRAY. 
+				Todas as posições do ARRAY possuem o mesmo identificador (mesmo nome) e são alocadas seuquencialmente na memória.
+				</p>
+				
+				<h3>DECLARAÇÃO DE VETOR</h3> 
+				<p class="exemplo">VAR  nome da variável: ARRAY [índice inicial.. índice final] OF tipo dos dados do vetor;</p> 
+				<p>Onde: <span class="exemplo">nome da variável</span> é o nome da variável do tipo vetor; <span class="exemplo">índice inicial</span> é o numero correspondente ao índice da primeira posição do veor;<br> <span class="exemplo">índice final </span> é o número correspondente ao índice da ultima posição do vetor; tipo dos dados do vetor é o tipo básico dos dados que serão armazenados no vetor. </p>
+				<p><strong>Observação:</strong> O valor do índice inicial deve, obrigatoriamente, ser maior ou igual ao valor do indice final. As posições serão numeradas com valores inteiros dentro desse intervalo.</p>
+ 
+				<h4>Exemplo 1:</h4>
+
+				<p class="exemplo">VAR vetor ARRAY [1..10] OF INTEGER</p>
+				<p>Neste caso, o índice poderá assumir valores inteiro que vão de 1 até 10.</p>
+
+				<h4>Exemplo 2:</h4>
+
+				<p class="exemplo">VAR vetor: ARRAY [5..9] OF REAL</p> 
+				<p>Neste caso, o índice poderá assumir valores inteiros que vão de 5 até 9.</p>
+				 
+				<h3>Exemplo de vetor</h3>
+
+				<p class="exemplo">VAR X : ARRAY [1..10] OF REAL</p> 
+
+				<table>
+					<tr class="vetor_pascal2">
+						<td style = border-style:none;>X</td>
+						<td>10.5</td>
+						<td>20</td>
+						<td>13.1</td>
+						<td>14.65</td>
+						<td>87</td>
+						<td>1.2</td>
+						<td>35.6</td>
+						<td>78.2</td>
+						<td>15</td>
+						<td>65.9</td>
+					</tr>
+					<tr class="tabela_vazia2">
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+					</tr>
+				</table> 
+
+
+				<p class="exemplo">VAR VET: ARRAY[5..9] OF CHAR</p>
+
+				<table>
+					<tr class="vetor_pascal2">
+						<td style = border-style:none;>X</td>
+						<td>E</td>
+						<td>*</td>
+						<td>m</td>
+						<td>J</td>
+						<td>k</td>
+					</tr>
+					<tr class="tabela_vazia2">
+						<td></td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+					</tr>
+				</table> 
+
+				<h3>Atribuindo valores ao vetor</h3> 
+				<p>As atribuições em vetor exigem que seja informada em qual de suas posições o valor ficará armazenado.</p>
+
+				<p class="exemplo">X[4]:=5; atribui o valor 5 à posição do vetor cujo índice é 4</p>
+				<p class="exemplo">VET[3]:='F'; atribui a letra F a posição do vetor cujo índice é 3</p>
+
+				<h3>Preenchendo um vetor</h3> 
+				<p>Preencher um vetor significa atribuir valores a todas as suas posições. Assim, deve-se implementar um mecanismo que controle o valor so índice.</p>
+				
+				<pre class="exemplo">
+				FOR i:= 1 TO 7 DO
+				  BEGIN
+				  READLN(X[1]);
+				END;</pre>
+				<p>Nesse exemplo, a estrutura de repetição <span class="exemplo">FOR</span> foi utilizada para garantir que a variável <span class="exemplo">i</span> assuma todos oa valores possíveis para o índice do vetor( de 1 a 7). Assim, para cada execução da repetição, será utiliada uma posição diferente do vetor. </p>
+
+				<h3>Mostrando elementos do vetor</h3> 
+			
+				<p>Mostrar os valores contidos em um vetor também exige a utilização do índice.</p>
+				
+				<p class="exemplo">FOR i:=1; TO 10 DO</p>
+				<p class="exemplo">BEGIN</p>
+				<pre class="exemplo">	WRITELN(X[i]);</pre>
+				<p class="exemplo">END;</p>
+				<p>Nesse exemplo, a estrutura de repetição <span class="exemplo">FOR</span> foi utilizada para garantir que a variável <span class="exemplo">i</span> assuma todos os valores possiveis para o índice do vetor (de 1 a 10). Assim, para cada execução da repetição, será utilizada uma posição diferente e, dessa forma, todos os valores do vetor serão mostrados. </p>
+
+				<nav id="ancora">
+					<a href="#inicio">inicio</a>
+				</nav>
+
+			</section>
+		</article>
+		<footer>
+				<address>Desenvolvido por <a id="email" href="mailto:joao-junior@utfpr.com.br">João Amaral Junior</a> |	2º Período - UTFPR - 2014.</address>
+		</footer>
+		</div>
+	</body>
+</html>
