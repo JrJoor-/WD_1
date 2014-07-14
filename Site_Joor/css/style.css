@@ -1,0 +1,92 @@
+@font-face {
+   font-family: Handlee;
+	src: url('../fonts/Handlee-Regular.ttf');
+}
+
+@font-face {
+   font-family: Good_Day;
+	src: url('../fonts/Good_Day.ttf');
+}
+
+@font-face {
+   font-family: CaviarDreams;
+	src: url('../fonts/CaviarDreams.ttf');
+}
+
+.container  #inicio {
+	padding-top: 50px;
+}
+
+#rodape {
+	padding-top: 90px;
+	font-size: 20px;
+	font-family: 'CaviarDreams', cursive, "Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding-bottom: 50px;
+	float: left;
+}
+
+#rodape2 {
+	text-align: center;
+	padding-bottom: 50px;
+	font-size: 20px;
+	font-family: 'CaviarDreams', cursive, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+hr.light {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 550px;
+    border: 0;
+    border-top: solid 2px;
+    text-align: center;
+}
+
+.icons {
+	margin-top: 8px;
+	float: right;
+}
+
+.icons a:hover {
+	opacity: 0.8;
+
+}
+ 
+a:hover {
+	outline: 0;
+	color: #18bc9c;
+}
+
+h3 {
+	text-transform: uppercase;
+}
+
+audio {
+	height: 19px;
+	width: 300px;
+}
+
+audio:hover {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+
+#player {
+	position: relative;
+	display: block;
+	margin-left: -150px;
+	padding-left: 50%;
+	font-size: 16px;
+}
+
+#foto_joor img{
+	float: right;
+}
+
+fieldset {
+	font-style: italic;
+}
+
+.video {
+	margin-top: 70px;
+}

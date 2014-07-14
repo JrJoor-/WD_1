@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		
+	    <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    	<meta name="description" content="Site Pessoal">
+    	<meta name="author" content="João Amaral Junior">
+		<title>Joor</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+
+	</head>
+	<body>
+		<nav class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+		    	<div class="container">
+
+				    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </a>
+				 
+
+				    <a class="brand" href="index.html">Joor</a>
+
+				    <div class="nav-collapse collapse">
+
+				        <ul class="nav">
+						 	<li><a href="index.html">Início</a></li>
+				  			<li><a href="fotos.html">Fotos</a></li>
+				  			<li><a href="historia.html">Historia</a></li>
+				  			<li><a href="familia.html">Familia</a></li>
+				  			<li class="active"><a href="contato.html">Contato</a></li>
+						</ul>
+						<div class="icons">
+							<a href="https://github.com/JrJoor-"><img src="img/gitHub.png" alt="GitHub"></a>
+							<a href="https://www.facebook.com/jrjoor"><img src="img/Facebook.png" alt="Facebook"></a>
+							<a href="mailto:jrjoor@globomail.com"><img src="img/Mail.png" alt="E-mail"></a>
+						</div>
+
+				    </div>
+		 		</div>
+		  	</div>
+		</nav>
+		
+		<main>
+			<section>
+				<div class="container">
+				 	<div class="row" id="inicio">
+				 		<div class="span12">
+				 			
+				 			<header>
+					 			<h3>Deixe sua opinião</h3>
+					 			<p>Deixe-me aqui o seu comentário e sua avaliação em relação ao desenvolvimento deste website, todas as sugestões são bem-vindas!</p>
+				 			</header>
+
+				 			<form class="form-horizontal" method="post" id="contato">
+
+				 				<fieldset id="usuario"><legend>Identificação</legend>
+				 				<p><input type="text" name="nome" id="name" maxlength="30" placeholder="João da Silva" />  Nome</p>
+				 				<p><input type="text" name="fone" id="Tel" maxlength="15" placeholder="42-9988-3423"/>  Telefone</p>
+				 				<p><input type="email" name="email" id="Mail" maxlength="40" placeholder="exemplo@exemplo.com"/>  E-mail</p>
+				 				</fieldset>
+				 				
+				 				<fieldset id="Avaliacao"><legend>Avaliação do site</legend>
+				 					<p><input type="radio" name="nota"> Ótimo</p>
+				 					<p><input type="radio" name="nota"> Bom</p>
+				 					<p><input type="radio" name="nota"> Regular</p>
+				 					<p><input type="radio" name="nota"> Ruim</p> 
+				 				</fieldset>
+
+				 				<fieldset id="mensagem"><legend>Comentário</legend>
+				 					<textarea name="msg" rows="3"></textarea>
+				 				</fieldset>
+				 				<br>
+				 				<input type="submit" value="Enviar" class="btn"/>
+				 			</form>
+		            	</div>
+		            </div>	
+		        </div>
+			</section>
+		</main>
+
+		<footer class="container">
+			<div id="rodape2">
+				<hr class="light">Copyright &copy; 2014 |	João Amaral Junior
+			</div>
+		</footer>
+	
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script> 
+
+	</body>
+</html>
